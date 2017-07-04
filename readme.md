@@ -15,4 +15,4 @@ Creates a DB and seeds it with information about the processed videos. Uses `med
 A React app. It performs an AJAX request after load to check for video assets and renders video players for them.
 
 ## Installation
-Make sure you have `ffmpeg`, `sqlite3` and `mediainfo` installed. Run `npm install` on both the root project and the `web-client` subdirectory. Place master video files in `assets/originals` and then run `./scripts/process_assets.rb` to ready the file for web and `./scripts/seed_sqlite.rb` to fill the database. `npm start` should now start your server and open a page to localhost.
+Make sure you have `ffmpeg`, `sqlite3` and `mediainfo` installed. `ffmpeg` should be compiled with `x264`, `fdk-aac`, `libvpx`, and `libvorbis` in order to support the default transcoding options. Run `npm install` on both the root project and the `web-client` subdirectory. Place master video files in `assets/originals` and then run `./scripts/process_assets.rb` to ready the file for web and `./scripts/seed_sqlite.rb` to fill the database. `npm start` should now start your server and open a page to localhost.
