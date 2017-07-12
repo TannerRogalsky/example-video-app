@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import VideoPanel from './VideoPanel.js';
@@ -14,15 +13,10 @@ class App extends Component {
         </div>
         <div className="App-content">
           {
-            videos === undefined ? (
-              <img src={logo} className="App-logo" alt="logo" />
-            ) : (
-              videos.map(function(row) {
-                return <VideoPanel key={row.uuid} {...row} />
-              })
-            )
+            videos.map(function(row) {
+              return <VideoPanel key={row.uuid} {...row} />
+            })
           }
-
         </div>
       </div>
     );

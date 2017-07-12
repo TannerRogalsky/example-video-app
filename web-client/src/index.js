@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// import logo from './logo.svg';
+// ReactDOM.render(<img src={logo} className="App-logo" alt="logo" />, document.getElementById('root'));
 registerServiceWorker();
 
 fetch('/api/videos/').then(function(response) {
